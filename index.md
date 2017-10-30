@@ -2,4 +2,4 @@
 layout: home
 published: true
 ---
-This is some content I added using Prose!  I'm adding
+This is some content I added using Prose!  I'm adding some
