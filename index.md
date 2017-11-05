@@ -4,9 +4,11 @@ layout: default
 
 <section id="carousel">
     <div id="intro-carousel">
-        <div><img src="{{ site.baseurl }}/assets/images/golf_balls.jpg" /></div>
-        <div><img src="{{ site.baseurl }}/assets/images/golf_cart_1.jpg" /></div>
-        <div><img src="{{ site.baseurl }}/assets/images/players_1.jpg" /></div>
+        {% for image in site.static_files %}
+            {% if image.path contains 'images/carousel' %}
+                <div><img src="{{ site.baseurl }}{{ image.path }}" /></div>
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
 <section id="about">
