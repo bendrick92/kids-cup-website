@@ -17,5 +17,5 @@ url: https://bendrick92.github.io
 markdown: kramdown
 plugins:
 - jekyll-feed
-prose:
-  media: assets/images/
+carousel_images:
+- "/uploads/wrxfront.PNG"
