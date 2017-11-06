@@ -20,3 +20,8 @@ plugins:
 carousel_images:
 - "/uploads/wrxfront.PNG"
 - "/uploads/IMG_20170911_175959.jpg"
+sponsor_images:
+- image: "/uploads/IMG_20170911_164056.jpg"
+  name: Ben's Car
+- image: 
+  name: 
