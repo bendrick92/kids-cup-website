@@ -4,14 +4,23 @@ header {
         padding: 0;
         @include align-items(center);
     }
-    a.site-logo {
-        margin: .5em 0;
-        display: inline-block;
-        img {
-            width: auto;
-            height: 5em;
-            padding: 0;
-            margin: 0;
+    .site-heading {
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a.site-logo {
+            margin: .75em 0;
+            img {
+                width: auto;
+                height: 5em;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        h1 {
+            padding: 0 0 0 .5em;
+            font-size: 1.25em;
         }
     }
     nav {
@@ -84,6 +93,11 @@ header {
 
 @include phone-and-tablet {
     header {
+        .site-heading {
+            h1 {
+                display: none;
+            }
+        }
         nav {
             display: none;
             ul {

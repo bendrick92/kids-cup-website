@@ -18,10 +18,13 @@ markdown: kramdown
 plugins:
 - jekyll-feed
 carousel_images:
-- "/uploads/wrxfront.PNG"
-- "/uploads/IMG_20170911_175959.jpg"
-sponsor_images:
-- image: "/uploads/IMG_20170911_164056.jpg"
-  name: Ben's Car
-- image: 
-  name: 
+- "/uploads/golf_balls.jpg"
+- "/uploads/golf_cart_1.jpg"
+- "/uploads/players_1.jpg"
+sponsors:
+- image: "/uploads/express_logo.png"
+  name: Express Employment Professionals
+  link: https://www.expresspros.com/
+- image: "/uploads/first_alliance_logo.jpg"
+  name: First Alliance Credit Union
+  link: https://firstalliancecu.com

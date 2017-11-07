@@ -1,15 +1,27 @@
 #intro-carousel {
     width: 100%;
-    height: 30em;
+    height: 35em;
     .slick-arrow {
+        width: 1em;
+        height: 1em;
+        padding: 1em;
+        border: none;
+        border-radius: 50%;
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-1em);
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1em;
+        background: rgba(29,31,32,.4);
+        color: #ffffff;
         z-index: 100;
         &.slick-prev {
-            left: 0;
+            left: 1em;
         }
         &.slick-next {
-            right: 0;
+            right: 1em;
         }
     }
     .slick-list {
@@ -23,5 +35,56 @@
                 background-position: center;
             }
         }
+    }
+    ul.slick-dots {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 1em 0;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        > li {
+            display: inline-block; 
+            position: relative;
+            &.slick-active {
+                button {
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }           
+            button {
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                &:before {
+                    font-size: 30px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    content: '•';
+                    text-align: center;
+                    opacity: .25;
+                    color: #000000;;
+                }
+            }
+        }
+    }
+}
+
+@include phone-and-tablet {
+    #intro-carousel {
+        height: 20em;
     }
 }

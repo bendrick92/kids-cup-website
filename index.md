@@ -4,17 +4,15 @@ layout: default
 
 <section id="carousel">
     <div id="intro-carousel">
-        {% for image in site.static_files %}
-            {% if image.path contains 'images/carousel' %}
-                <div><img src="{{ site.baseurl }}{{ image.path }}" /></div>
-            {% endif %}
+        {% for image in site.carousel_images %}
+            <div><img src="{{ site.baseurl }}{{ image }}" /></div>
         {% endfor %}
     </div>
 </section>
 <section id="about">
     <div class="container">
         <div class="item flex-100">
-            <h2>About Kid's Cup</h2>
+            <h2 class="is-center-aligned">About Kid's Cup</h2>
             <p>Starting in 2012, the money raised by our golfers and sponsors will be donated to Mayo Clinic Children's Center and Olmsted Medical Center supporting prenatal and new infant care.</p>
             <p>Over the past fifteen years, Kid's Cup golfers have raised just shy of a million dollars for Mayo Eugenio Litta Children’s Hospital in Rochester and Gillette Children's Specialty Healthcare Hospital in Saint Paul.</p>
             <p>The important dollars raised have gone to support pediatric transport stretchers and equipment, pediatric patient simulators, occupational and physical rehabilitation equipment and various family support initiatives and resources.</p>
@@ -25,8 +23,14 @@ layout: default
     <div class="container">
         <div class="item flex-100">
             <h2>Sponsors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum elit ut luctus placerat. Mauris eleifend enim erat, sed molestie sapien iaculis auctor. Phasellus ac ligula rutrum, tincidunt turpis eleifend, mollis ipsum. Quisque nec congue nunc. Suspendisse nec mollis nisi, ac euismod ipsum. Nam quis nisl consectetur, lobortis purus sed, laoreet nisi. Ut eget consectetur ligula.</p>
-            <p>Cras vel lectus aliquet, blandit mi sed, tincidunt tortor. Cras faucibus, lacus sed consectetur iaculis, purus leo commodo nulla, vel eleifend nisi justo nec eros. Pellentesque metus libero, dapibus at orci eu, consectetur aliquam dui. Maecenas vulputate purus id dolor consequat, vel auctor arcu scelerisque. Proin tristique velit ultrices, gravida ligula eget, luctus odio. Morbi fermentum purus eu nisi placerat, vitae efficitur dolor viverra. Nulla quis iaculis quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam lacus lectus, fringilla non orci vitae, convallis accumsan turpis. Nulla maximus erat bibendum vestibulum eleifend. Quisque vitae lorem ut eros semper malesuada in quis felis. Cras semper tortor et finibus sagittis.</p>
+            <div class="container">
+            {% for sponsor in site.sponsors %}
+                <div class="item flex-33 flex-50-tablet">
+                    <a href="{{ sponsor.link}}" target="_blank" class="item-overlay-link"></a>
+                    <img src="{{ site.baseurl }}{{ sponsor.image }}" class="has-no-margins" />
+                </div>
+            {% endfor %}
+            </div>
         </div>
     </div>
 </section>

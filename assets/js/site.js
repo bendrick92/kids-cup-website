@@ -1,8 +1,12 @@
 $(document).ready(function () {
     $('#intro-carousel').slick({
-        /*autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
-        infinite: true,*/
+        infinite: true,
+        arrows: true,
+        prevArrow: '<a class="slick-prev slick-arrow"><span class="fa fa-chevron-left"></span></a>',
+        nextArrow: '<a class="slick-next slick-arrow"><span class="fa fa-chevron-right"></span></a>',
+        dots: true
     });
 
     $('#intro-carousel .slick-slide').each(function () {
