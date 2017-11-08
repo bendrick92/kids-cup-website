@@ -23,6 +23,9 @@
 .has-padding-one {
     padding: 1em !important;
 }
+.has-padding-two {
+    padding: 2em !important;
+}
 .has-margin-one {
     margin: 1em !important;
 }
@@ -48,6 +51,19 @@
     font-size: .9em;
     > span {
         margin-right: .5em;
+    }
+}
+.is-button {
+    padding: .5em 1.3em;
+    border-radius: .25em;
+    display: inline-block;
+    background-color: $blue;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        background-color: $light-blue;
+        text-decoration: none;
+        cursor: pointer;        
     }
 }
 ul {
@@ -85,6 +101,22 @@ p {
         font-size: .9em;
         text-transform: uppercase;
     }
+}
+.has-white-background {
+    background-color: $white;
+    color: $dark-gray;
+}
+.has-light-gray-background {
+    background-color: $light-gray;
+    color: $dark-gray;
+}
+.has-green-background {
+    background-color: $green;
+    color: $white;
+}
+.has-orange-background {
+    background-color: $orange;
+    color: $white;
 }
 
 @include phone {

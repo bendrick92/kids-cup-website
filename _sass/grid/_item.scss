@@ -56,13 +56,14 @@
     .container {
         .item {
             padding: 0;
-            &.flex-50, &.flex-33 {
+            &.flex-50, &.flex-33, &.flex-25 {
                 width: 100%;
                 max-width: 100%;
-            }
-            &.flex-25 {
-                width: 48%;
-                max-width: 48%;
+                &.has-gutter {
+                    width: 96%;
+                    max-width: 96%;
+                    margin: 2%;
+                }
             }
         }
     }
@@ -81,14 +82,29 @@
             &.flex-50-tablet {
                 width: 50%;
                 max-width: 50%;
+                &.has-gutter {
+                    width: 46%;
+                    max-width: 46%;
+                    margin: 2%;
+                }
             }
             &.flex-33-tablet {
-                width: 33%;
-                max-width: 33%;
+                width: 33.33%;
+                max-width: 33.33%;
+                &.has-gutter {
+                    width: 29.33%;
+                    max-width: 29.33%;
+                    margin: 2%;
+                }
             }
             &.flex-25-tablet {
                 width: 25%;
                 max-width: 25%;
+                &.has-gutter {
+                    width: 21%;
+                    max-width: 21%;
+                    margin: 2%;
+                }
             }
         }
     }

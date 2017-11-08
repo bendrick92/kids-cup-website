@@ -91,7 +91,7 @@ hr {
 }
 
 h1, h2, h3, h4 {
-    margin: 1.25rem 0;
+    margin: .5em 0 1em 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     &.section-heading {
@@ -102,16 +102,16 @@ h1, h2, h3, h4 {
     }
 }
 h1 {
-    font-size: 48px;
+    font-size: 52px;
 }
 h2 {
-    font-size: 38px;
+    font-size: 48px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 38px;
 }
 h4 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 p, ul, ol, hr, img, iframe, blockquote {

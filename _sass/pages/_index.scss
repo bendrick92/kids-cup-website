@@ -1,90 +1,97 @@
-#intro-carousel {
-    width: 100%;
-    height: 35em;
-    .slick-arrow {
-        width: 1em;
-        height: 1em;
-        padding: 1em;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-1em);
-        display: block;
-        text-align: center;
-        font-weight: 600;
-        line-height: 1em;
-        background: rgba(29,31,32,.4);
-        color: #ffffff;
-        z-index: 100;
-        &.slick-prev {
-            left: 1em;
-        }
-        &.slick-next {
-            right: 1em;
-        }
-    }
-    .slick-list {
-        height: 100%;
-        .slick-track {
-            height: 100%;
-            .slick-slide {
-                position: relative;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+#carousel {
+    #intro-carousel {
+        width: 100%;
+        height: 35em;
+        .slick-arrow {
+            width: 1em;
+            height: 1em;
+            padding: 1em;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-1em);
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1em;
+            background: rgba(29,31,32,.4);
+            color: #ffffff;
+            z-index: 100;
+            &.slick-prev {
+                left: 1em;
+            }
+            &.slick-next {
+                right: 1em;
             }
         }
-    }
-    ul.slick-dots {
-        width: 100%;
-        padding: 0;
-        margin: 0 0 1em 0;
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        > li {
-            display: inline-block; 
-            position: relative;
-            &.slick-active {
-                button {
-                    &:before {
-                        opacity: 1;
-                    }
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                height: 100%;
+                .slick-slide {
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
                 }
-            }           
-            button {
-                width: 20px;
-                height: 20px;
-                padding: 5px;
-                font-size: 0;
-                line-height: 0;
-                display: block;
-                cursor: pointer;
-                color: transparent;
-                border: 0;
-                outline: none;
-                background: transparent;
-                &:before {
-                    font-size: 30px;
-                    line-height: 20px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+            }
+        }
+        ul.slick-dots {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 1em 0;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            > li {
+                display: inline-block; 
+                position: relative;
+                &.slick-active {
+                    button {
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
+                }           
+                button {
                     width: 20px;
                     height: 20px;
-                    content: '•';
-                    text-align: center;
-                    opacity: .25;
-                    color: #000000;;
+                    padding: 5px;
+                    font-size: 0;
+                    line-height: 0;
+                    display: block;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background: transparent;
+                    &:before {
+                        font-size: 30px;
+                        line-height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        content: '•';
+                        text-align: center;
+                        opacity: .25;
+                        color: #000000;;
+                    }
                 }
             }
         }
     }
 }
+#about, #sponsors, #sign-up {
+    padding: 2rem 0;
+}
 
 @include phone-and-tablet {
-    #intro-carousel {
-        height: 20em;
+    #carousel {
+        #intro-carousel {
+            height: 20em;
+        }
     }
 }
