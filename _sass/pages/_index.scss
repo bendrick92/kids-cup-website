@@ -84,8 +84,19 @@
         }
     }
 }
-#about, #sponsors, #sign-up {
-    padding: 2rem 0;
+#about {
+    padding: 1rem 0;
+    #about-details {
+        width: 75%;
+        max-width: 75%;
+        padding: 0 12.5%;
+    }
+}
+#sponsors {
+    padding: 1rem 0;
+}
+#sign-up {
+    padding: 1rem 0;
 }
 
 @include phone-and-tablet {

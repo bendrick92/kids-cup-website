@@ -21,13 +21,22 @@
     @extend .has-no-margins;
 }
 .has-padding-one {
-    padding: 1em !important;
+    padding: 1rem !important;
 }
 .has-padding-two {
-    padding: 2em !important;
+    padding: 2rem !important;
 }
 .has-margin-one {
-    margin: 1em !important;
+    margin: 1rem !important;
+}
+.has-margin-two {
+    margin: 2rem !important;
+}
+.has-margin-one-bottom {
+    margin-bottom: 1rem !important;
+}
+.has-margin-two-bottom {
+    margin-bottom: 2rem !important;
 }
 .zoom-on-hover {
     > * {
@@ -65,6 +74,9 @@
         text-decoration: none;
         cursor: pointer;        
     }
+}
+.is-icon {
+    margin: 0 0 1rem 0;
 }
 ul {
     &.is-unstyled-list {
