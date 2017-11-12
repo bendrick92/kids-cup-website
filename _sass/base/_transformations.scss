@@ -48,8 +48,20 @@
         }
     }
 }
+.is-left-aligned {
+    text-align: left;
+}
 .is-center-aligned {
     text-align: center;
+}
+.is-right-aligned {
+    text-align: right;
+}
+.is-floated-left {
+    float: left;
+}
+.is-floated-right {
+    float: right;
 }
 .is-round-img {
     border-radius: 50%;
@@ -106,6 +118,11 @@ ul {
                 }
             }
         }
+    }
+    &.is-unbulleted-list {
+        padding: 0;
+        margin-left: none;
+        list-style-type: none;
     }
 }
 p {

@@ -1,19 +1,29 @@
 $(document).ready(function () {
-    $('#intro-carousel').slick({
-        autoplay: true,
-        autoplaySpeed: 4000,
-        infinite: true,
-        arrows: true,
-        prevArrow: '<a class="slick-prev slick-arrow"><span class="fa fa-chevron-left"></span></a>',
-        nextArrow: '<a class="slick-next slick-arrow"><span class="fa fa-chevron-right"></span></a>',
-        dots: true
+    var header = $('header');
+    var introSection = $("#intro");
+
+    checkHeader();
+
+    $(document).scroll(function () {
+        checkHeader();
     });
 
-    $('#intro-carousel .slick-slide').each(function () {
-        var img = $(this).children('img');
-        if (img.length) {
-            $(this).css('background-image', 'url(' + img.attr('src') + ')');
-            img.remove();
+    function checkHeader() {
+        var scrollY = $(this).scrollTop();
+        var triggerHeight = introSection.height() - header.height();
+        if (scrollY > triggerHeight) {
+            if (!header.hasClass('fixed-header')) {
+                header.hide();
+                header.css('position', 'fixed');
+                header.addClass('fixed-header');
+                header.slideDown();
+            }
         }
-    });
+        else {
+            if (header.hasClass('fixed-header')) {
+                header.css('position', 'absolute');
+                header.removeClass('fixed-header');
+            }
+        }
+    }
 });

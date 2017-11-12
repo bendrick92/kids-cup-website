@@ -13,6 +13,15 @@
             margin: 2%;
         }
     }
+    &.flex-75 {
+        width: 75%;
+        max-width: 75%;
+        &.has-gutter {
+            width: 71%;
+            max-width: 71%;
+            margin: 2%;
+        }
+    }
     &.flex-50 {
         width: 50%;
         max-width: 50%;
@@ -34,6 +43,11 @@
     &.flex-25 {
         width: 25%;
         max-width: 25%;
+        &.has-gutter {
+            width: 21%;
+            max-width: 21%;
+            margin: 2%;
+        }
     }
     &.has-centered-content {
         @include flexbox;
@@ -50,13 +64,60 @@
         top: 0;
         left: 0;
     }
+    img {
+        &.flex-100 {
+            width: 100%;
+            max-width: 100%;
+            &.has-gutter {
+                width: 96%;
+                max-width: 96%;
+                margin: 0 2% 2%;
+            }
+        }
+        &.flex-75 {
+            width: 75%;
+            max-width: 75%;
+            &.has-gutter {
+                width: 71%;
+                max-width: 71%;
+                margin: 0 2% 2%;
+            }
+        }
+        &.flex-50 {
+            width: 50%;
+            max-width: 50%;
+            &.has-gutter {
+                width: 46%;
+                max-width: 46%;
+                margin: 0 2% 2%;
+            }
+        }
+        &.flex-33 {
+            width: 33%;
+            max-width: 33%;
+            &.has-gutter {
+                width: 29.33%;
+                max-width: 29.33%;
+                margin: 0 2% 2%;
+            }
+        }
+        &.flex-25 {
+            width: 25%;
+            max-width: 25%;
+            &.has-gutter {
+                width: 21%;
+                max-width: 21%;
+                margin: 0 2% 2%;
+            }
+        }
+    }
 }
 
 @include phone {   
     .container {
         .item {
             padding: 0;
-            &.flex-50, &.flex-33, &.flex-25 {
+            &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
                 width: 100%;
                 max-width: 100%;
                 &.has-gutter {
@@ -65,19 +126,26 @@
                     margin: 2%;
                 }
             }
+            img {
+                &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
+                    width: 100%;
+                    max-width: 100%;
+                    &.has-gutter {
+                        width: 96%;
+                        max-width: 96%;
+                        margin: 0 2% 2%;
+                    }
+                }
+            }
         }
     }
 }
 @include tablet {
     .container {
         .item {
-            &.flex-50, &.flex-33 {
+            &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
                 width: 100%;
                 max-width: 100%;
-            }
-            &.flex-25 {
-                width: 48%;
-                max-width: 48%;
             }
             &.flex-50-tablet {
                 width: 50%;
@@ -104,6 +172,39 @@
                     width: 21%;
                     max-width: 21%;
                     margin: 2%;
+                }
+            }
+            img {
+                &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
+                    width: 100%;
+                    max-width: 100%;
+                }
+                &.flex-50-tablet {
+                    width: 50%;
+                    max-width: 50%;
+                    &.has-gutter {
+                        width: 46%;
+                        max-width: 46%;
+                        margin: 0 2% 2%;
+                    }
+                }
+                &.flex-33-tablet {
+                    width: 33.33%;
+                    max-width: 33.33%;
+                    &.has-gutter {
+                        width: 29.33%;
+                        max-width: 29.33%;
+                        margin: 0 2% 2%;
+                    }
+                }
+                &.flex-25-tablet {
+                    width: 25%;
+                    max-width: 25%;
+                    &.has-gutter {
+                        width: 21%;
+                        max-width: 21%;
+                        margin: 0 2% 2%;
+                    }
                 }
             }
         }
