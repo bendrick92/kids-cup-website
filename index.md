@@ -14,7 +14,7 @@ layout: default
     <div class="container">
         <div class="item flex-100">
             <h3>Who We Are</h3>
-            <img class="is-floated-right flex-50 has-gutter" src="uploads/players_1.jpg" />
+            <img class="is-floated-right flex-50" src="uploads/players_1.jpg" />
             <p>What began in 1997 as the Miracle Marathon has evolved over the past two decades to the Kid’s Cup Golf Tournament. In the beginning, Mark and Sheryl Tasler simply donated $10,000 to the Miracle Marathon, but with much thought they realized their dollars could go much further.  Rather than donate a lump sum, they began sponsoring the tournament.</p>
             <p>In turn, rather than raise money per hole played, the tournament’s format was changed and golfers began fundraising.  With this transition, the Tasler’s saw their $10,000 donation grow more than tenfold.</p>
             <p>Guided by a small group of volunteers, the tournament is on its 22nd year, and has raised over $1.5 million.  Initially benefitting Mayo Clinic Children’s Center and Gillette Children’s Hospital, in 2012 Kid’s Cup decided all proceeds should stay local and has since benefitted Mayo Clinic and Prenatal and Infant Care at Olmsted Medical Center.  Now, when we say “benefitting” we mean 100% of the money raised go directly to these two organizations.</p>
@@ -26,7 +26,7 @@ layout: default
     <div class="container">
         <div class="item flex-100">
             <h3>What Makes Us Unique</h3>
-            <img class="is-floated-right flex-50 has-gutter" src="uploads/golf_cart_1.jpg" />
+            <img class="is-floated-right flex-50" src="uploads/golf_cart_1.jpg" />
             <p>For 22 years our golfers have been raising money for the kids.  Just to play, the golfers have to raise a minimum of $500.  Many of our golfers go above and beyond the required $500 and raise up to $6,000 a year.</p>
             <p>When you are asked to donate to a Kid’s Cup golfer, keep in mind you are donating to fund a project or product that is NOT in the hospitals’ budget.  The entire purpose and mission of our tournament is to make an impact on these children’s stay at the hospital, not only for the patients but for their parents and siblings.  They are generally lengthy stays, and the money raised goes to make these stays more tolerable and comfortable.</p>
             <p>Over the years, the projects at Mayo Clinic have included:</p>
@@ -62,7 +62,7 @@ layout: default
     <div class="container">
         <div class="item flex-100">
             <h3>What's New for 2018</h3>
-            <img class="is-floated-right flex-50 has-gutter" src="uploads/somerbys_course.jpg" />
+            <img class="is-floated-right flex-50" src="uploads/somerbys_course.jpg" />
             <p>The Kid’s Cup has followed the same format for 21 years, but this year we’ve decided to switch things up. Instead of 36 holes played at two different golf courses, the tournament will be held at <a href="http://www.somerby.com" target="_blank">Somerby Golf Club</a>, South East Minnesota’s premiere championship golf club, on May 21, 2018. The tournament will be 18 holes, leaving more time for our golfers to enjoy dinner, along with our silent auction.</p>
             <h5>Schedule of Events:</h5>
             <ul class="is-unbulleted-list">

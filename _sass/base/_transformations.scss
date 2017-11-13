@@ -78,11 +78,11 @@
     padding: .5em 1.3em;
     border-radius: .25em;
     display: inline-block;
-    background-color: $blue;
+    background-color: $green;
     color: $white;
     text-decoration: none;
     &:hover {
-        background-color: $light-blue;
+        background-color: $light-green;
         text-decoration: none;
         cursor: pointer;        
     }

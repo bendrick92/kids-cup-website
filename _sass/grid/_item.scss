@@ -65,50 +65,32 @@
         left: 0;
     }
     img {
+        margin: 0;
+        box-sizing: border-box;
         &.flex-100 {
             width: 100%;
             max-width: 100%;
-            &.has-gutter {
-                width: 96%;
-                max-width: 96%;
-                margin: 0 2% 2%;
-            }
+            padding: 0 2rem 2rem 2rem;
         }
         &.flex-75 {
             width: 75%;
             max-width: 75%;
-            &.has-gutter {
-                width: 71%;
-                max-width: 71%;
-                margin: 0 2% 2%;
-            }
+            padding: 0 2rem 2rem 2rem;
         }
         &.flex-50 {
             width: 50%;
             max-width: 50%;
-            &.has-gutter {
-                width: 46%;
-                max-width: 46%;
-                margin: 0 2% 2%;
-            }
+            padding: 0 2rem 2rem 2rem;
         }
         &.flex-33 {
             width: 33%;
             max-width: 33%;
-            &.has-gutter {
-                width: 29.33%;
-                max-width: 29.33%;
-                margin: 0 2% 2%;
-            }
+            padding: 0 2rem 2rem 2rem;
         }
         &.flex-25 {
             width: 25%;
             max-width: 25%;
-            &.has-gutter {
-                width: 21%;
-                max-width: 21%;
-                margin: 0 2% 2%;
-            }
+            padding: 0 2rem 2rem 2rem;
         }
     }
 }
@@ -130,11 +112,7 @@
                 &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
                     width: 100%;
                     max-width: 100%;
-                    &.has-gutter {
-                        width: 96%;
-                        max-width: 96%;
-                        margin: 0 2% 2%;
-                    }
+                    padding: 0 0 2rem 0;
                 }
             }
         }
@@ -178,33 +156,22 @@
                 &.flex-75, &.flex-50, &.flex-33, &.flex-25 {
                     width: 100%;
                     max-width: 100%;
+                    padding: 0 0 2rem 0;
                 }
                 &.flex-50-tablet {
                     width: 50%;
                     max-width: 50%;
-                    &.has-gutter {
-                        width: 46%;
-                        max-width: 46%;
-                        margin: 0 2% 2%;
-                    }
+                    padding: 0 2rem 2rem 2rem;
                 }
                 &.flex-33-tablet {
                     width: 33.33%;
                     max-width: 33.33%;
-                    &.has-gutter {
-                        width: 29.33%;
-                        max-width: 29.33%;
-                        margin: 0 2% 2%;
-                    }
+                    padding: 0 2rem 2rem 2rem;
                 }
                 &.flex-25-tablet {
                     width: 25%;
                     max-width: 25%;
-                    &.has-gutter {
-                        width: 21%;
-                        max-width: 21%;
-                        margin: 0 2% 2%;
-                    }
+                    padding: 0 2rem 2rem 2rem;
                 }
             }
         }

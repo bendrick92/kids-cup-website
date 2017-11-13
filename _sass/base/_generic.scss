@@ -3,10 +3,10 @@ html {
 }
 body {
     min-height: 100vh;
-    margin-top: 5.5rem;
+    margin-top: $header-height;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     color: $dark-gray;
     @include flexbox;
     @include flex-direction(column); 
@@ -92,9 +92,10 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 2rem 0;
+    margin:  0 0 2rem 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    color: $green;
     &.section-heading {
         text-transform: uppercase;
     }
