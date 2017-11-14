@@ -28,10 +28,18 @@ $(document).ready(function () {
     }
 
     var hamburger = $('.hamburger');
-    var navigation = $('nav');
-    
+    var nav = $('nav');
+    var navItems = nav.find('ul li');
+
     hamburger.click(function () {
 		$(this).toggleClass('open');
-        navigation.toggleClass('open');
+        nav.toggleClass('open');
+    });
+
+    navItems.click(function () {
+        if (nav.hasClass('open')) {
+            nav.removeClass('open');
+            hamburger.removeClass('open');
+        }
     });
 });

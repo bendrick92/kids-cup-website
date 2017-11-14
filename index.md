@@ -7,13 +7,37 @@ layout: default
     <section id="intro-content">
         <img class="icon" src="assets/images/kids_cup_logo.png">
         <h1 class="title">Kid's Cup Rochester</h1>
-        <h4 class="date">May 8, 2018</h4><h4 class="location">Somerby's Golf Course</h4>
     </section>
+</section>
+<section id="event-details" class="has-light-gray-background">
+    <div class="container">
+        <div class="item flex-100">
+            <h3 class="is-center-aligned is-section-heading">Next Event</h3>
+        </div>
+        <div class="item flex-50 is-center-aligned">
+            <span class="fa fa-calendar fa-2x is-icon"></span>
+            <h4>Date & Time</h4>
+            <p>
+                May 8, 2018
+                <br>
+                9:30 AM - 6:00 PM
+            </p>
+        </div>
+        <div class="item flex-50 is-center-aligned">
+            <span class="fa fa-map-marker fa-2x is-icon"></span>
+            <h4>Location</h4>
+            <p>
+                Somerby Golf Club
+                <br>
+                (<a href="https://www.google.com/maps/dir//''/@44.0477542,-92.6697751,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87f742b8acef5c79:0xe0c57d3c2c3b35dd!2m2!1d-92.6347557!2d44.0476979" target="_blank">Directions</a>)
+            </p>
+        </div>
+    </div>
 </section>
 <section id="who-we-are">
     <div class="container">
         <div class="item flex-100">
-            <h3>Who We Are</h3>
+            <h3 class="is-center-aligned is-section-heading">Who We Are</h3>
             <img class="is-floated-right flex-50" src="uploads/players_1.jpg" />
             <p>What began in 1997 as the Miracle Marathon has evolved over the past two decades to the Kid’s Cup Golf Tournament. In the beginning, Mark and Sheryl Tasler simply donated $10,000 to the Miracle Marathon, but with much thought they realized their dollars could go much further.  Rather than donate a lump sum, they began sponsoring the tournament.</p>
             <p>In turn, rather than raise money per hole played, the tournament’s format was changed and golfers began fundraising.  With this transition, the Tasler’s saw their $10,000 donation grow more than tenfold.</p>
@@ -25,7 +49,7 @@ layout: default
 <section id="what-makes-us-unique" class="has-light-gray-background">
     <div class="container">
         <div class="item flex-100">
-            <h3>What Makes Us Unique</h3>
+            <h3 class="is-center-aligned is-section-heading">What Makes Us Unique</h3>
             <img class="is-floated-right flex-50" src="uploads/golf_cart_1.jpg" />
             <p>For 22 years our golfers have been raising money for the kids.  Just to play, the golfers have to raise a minimum of $500.  Many of our golfers go above and beyond the required $500 and raise up to $6,000 a year.</p>
             <p>When you are asked to donate to a Kid’s Cup golfer, keep in mind you are donating to fund a project or product that is NOT in the hospitals’ budget.  The entire purpose and mission of our tournament is to make an impact on these children’s stay at the hospital, not only for the patients but for their parents and siblings.  They are generally lengthy stays, and the money raised goes to make these stays more tolerable and comfortable.</p>
@@ -61,7 +85,7 @@ layout: default
 <section id="whats-new">
     <div class="container">
         <div class="item flex-100">
-            <h3>What's New for 2018</h3>
+            <h3 class="is-center-aligned is-section-heading">What's New for 2018</h3>
             <img class="is-floated-right flex-50" src="uploads/somerbys_course.jpg" />
             <p>The Kid’s Cup has followed the same format for 21 years, but this year we’ve decided to switch things up. Instead of 36 holes played at two different golf courses, the tournament will be held at <a href="http://www.somerby.com" target="_blank">Somerby Golf Club</a>, South East Minnesota’s premiere championship golf club, on May 21, 2018. The tournament will be 18 holes, leaving more time for our golfers to enjoy dinner, along with our silent auction.</p>
             <h5>Schedule of Events:</h5>
@@ -77,7 +101,7 @@ layout: default
 <section id="sponsors" class="has-light-gray-background">
     <div class="container">
         <div class="item flex-100">
-            <h3 class="is-center-aligned">Sponsors</h3>
+            <h3 class="is-center-aligned is-section-heading">Sponsors</h3>
         </div>
         {% for sponsor in site.sponsors %}
             <div class="item flex-33 flex-50-tablet has-padding-two has-gutter has-centered-content has-white-background">
@@ -90,17 +114,17 @@ layout: default
 <section id="sign-up">
     <div class="container">
         <div class="item flex-100">
-            <h3 class="is-center-aligned">Sign Up</h3>
+            <h3 class="is-center-aligned is-section-heading">Sign Up</h3>
         </div>
         <div class="item flex-50 has-gutter is-center-aligned">
+            <span class="fa fa-flag fa-2x is-icon"></span>
             <h4>For Golfers</h4>
-            <span class="fa fa-flag fa-3x is-icon"></span>
             <p>Registration is easy. Simply create your fund easy page <a href="https://secure.ministrysync.com/ministrysync/event/website/home/?e=10087" target="_blank">here</a>. Once registered, you can direct potential donors to your site and share the link on Facebook and Twitter.  If you receive donations as cash or check, simply record the donations on your Fund Easy page, and bring the cash and checks to Somerby the day of the event.</p>
             <p><a class="is-button" href="https://secure.ministrysync.com/ministrysync/event/website/home/?e=10087" target="_blank">I want to golf!</a></p>
         </div>
         <div class="item flex-50 has-gutter is-center-aligned">
+            <span class="fa fa-handshake-o fa-2x is-icon"></span>
             <h4>For Sponsors</h4>
-            <span class="fa fa-handshake-o fa-3x is-icon"></span>
             <p>We understand that not everyone is a golfer. However, there are sponsorship opportunities available, along with volunteer opportunities. For more information contact Jeff Jensen (<a href="mailto:jeff.jensen@expresspros.com?subject=Kid's Cup Rochester Sponsorship">jeff.jensen@expresspros.com</a>) or Marge Kelley (<a href="mailto:marge.kelley@expresspros.com?subject=Kid's Cup Rochester Sponsorship">marge.kelley@expresspros.com</a>).</p>
             <p><a class="is-button" href="mailto:marge.kelley@expresspros.com?subject=Kid's Cup Rochester Sponsorship">I want to sponsor!</a></p>
         </div>
