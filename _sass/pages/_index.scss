@@ -44,3 +44,13 @@
         }
     }
 }
+
+@include phone-and-tablet {
+    #intro {
+        #intro-content {
+            .icon {
+                height: 10rem;
+            }
+        }
+    }
+}
