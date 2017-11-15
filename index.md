@@ -18,9 +18,9 @@ layout: default
             <span class="fa fa-calendar fa-2x is-icon"></span>
             <h4>Date & Time</h4>
             <p>
-                May 8, 2018
+                {{ site.next_event.date }}
                 <br>
-                9:30 AM - 6:00 PM
+                {{ site.next_event.time }}
             </p>
         </div>
         <div class="item flex-50 is-center-aligned">
@@ -29,7 +29,7 @@ layout: default
             <p>
                 Somerby Golf Club
                 <br>
-                (<a href="https://www.google.com/maps/dir//''/@44.0477542,-92.6697751,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87f742b8acef5c79:0xe0c57d3c2c3b35dd!2m2!1d-92.6347557!2d44.0476979" target="_blank">Directions</a>)
+                (<a href="{{ site.next_event.directions_url }}" target="_blank">Directions</a>)
             </p>
         </div>
     </div>
@@ -38,11 +38,8 @@ layout: default
     <div class="container">
         <div class="item flex-100">
             <h3 class="is-center-aligned is-section-heading">Who We Are</h3>
-            <img class="is-floated-right flex-50" src="uploads/players_1.jpg" />
-            <p>What began in 1997 as the Miracle Marathon has evolved over the past two decades to the Kid’s Cup Golf Tournament. In the beginning, Mark and Sheryl Tasler simply donated $10,000 to the Miracle Marathon, but with much thought they realized their dollars could go much further.  Rather than donate a lump sum, they began sponsoring the tournament.</p>
-            <p>In turn, rather than raise money per hole played, the tournament’s format was changed and golfers began fundraising.  With this transition, the Tasler’s saw their $10,000 donation grow more than tenfold.</p>
-            <p>Guided by a small group of volunteers, the tournament is on its 22nd year, and has raised over $1.5 million.  Initially benefitting Mayo Clinic Children’s Center and Gillette Children’s Hospital, in 2012 Kid’s Cup decided all proceeds should stay local and has since benefitted Mayo Clinic and Prenatal and Infant Care at Olmsted Medical Center.  Now, when we say “benefitting” we mean 100% of the money raised go directly to these two organizations.</p>
-            <p>How can that be you wonder?  The Kid’s Cup Golf Tournament is funded by the owners of our local <a href="http://www.expresspros.com" target="_blank">Express Employment Professionals</a> which includes green fees, carts, gifts for the golfers, breakfast, and dinner. In addition, many local businesses step forward with generous donations and volunteers.</p>
+            <img class="is-floated-right flex-50" src="{{ site.baseurl }}{{ site.who_we_are.image }}" />
+            {{ site.who_we_are.content }}
         </div>
     </div>
 </section>
